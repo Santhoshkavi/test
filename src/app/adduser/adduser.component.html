@@ -1,0 +1,24 @@
+<p>adduser works!</p>
+<form>
+
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" [(ngModel)]="plus.username"><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" [(ngModel)]="plus.password"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" [(ngModel)]="plus.email"><br>
+
+    <label for="phno">P.No:</label><br>
+    <input type="number" name="phno" [(ngModel)]="plus.phno"><br>
+
+    <label for="usertype">Choose a usertype:</label><br>
+    <select name="usertype" id="user" [(ngModel)]="plus.usertype">
+        <option value="admin">Admin</option>
+        <option value="staff">Staff</option>
+    </select><br>
+
+    <input type="button" value="adduser" (click)="add()">
+
+</form>

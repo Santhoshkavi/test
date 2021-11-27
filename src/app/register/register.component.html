@@ -1,0 +1,36 @@
+<p>register works!</p>
+<h1>EDIT THE VALUES</h1>
+<form>
+
+    <label for="id">Id:</label><br>
+    <input type="text" name="id" [(ngModel)]="update.id"><br>
+
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" [(ngModel)]="update.username"><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" [(ngModel)]="update.password"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" [(ngModel)]="update.email"><br>
+
+    <label for="phno">P.No:</label><br>
+    <input type="number" name="phno" [(ngModel)]="update.phno"><br>
+
+    <label for="usertype">Choose a usertype:</label><br>
+    <select name="usertype" id="user" [(ngModel)]="update.usertype">
+        <option value="admin">Admin</option>
+        <option value="staff">Staff</option>
+    </select><br>
+
+    <input type="button" value="update" (click)="save()">
+    
+</form>
+
+<h1>DELETE THE VALUE</h1>
+<div>
+    <label for="id1">Id:</label><br>
+    <input type="text" name="id1" [(ngModel)]="del.id"><br>
+    <input type="button" value="delete" (click)="delete()">
+
+</div>
